@@ -1,7 +1,6 @@
 import CaseStudyLayout from '../layouts/CaseStudyLayout';
 import CsSection from '../components/case-study/CsSection';
 import Callout from '../components/case-study/Callout';
-import ImagePlaceholder from '../components/case-study/ImagePlaceholder';
 import CsNav from '../components/case-study/CsNav';
 import SummaryStats from '../components/case-study/SummaryStats';
 import LearningCard from '../components/case-study/LearningCard';
@@ -37,7 +36,7 @@ export default function CaseStudyGalaxy360() {
       meta={META}
       toc={TOC}
     >
-      <ImagePlaceholder height={360} label="[Galaxy 360 overall interface — applications overview or Kanban board · 1200×675px]" />
+      <img src="/galaxy360/galaxy360-hero.png" alt="Galaxy 360 overall interface" className="cs-full-img" />
 
       <CsSection id="s-summary" title="Summary">
         <p>Galaxy 360 is a digital platform for international student recruitment and application management. I was brought in as a freelance product designer to revamp the design system and application management interface, working directly and continuously with the engineering team throughout.</p>
@@ -66,7 +65,7 @@ export default function CaseStudyGalaxy360() {
         <Callout>
           <p><strong>The deeper problem was architectural:</strong> the platform was designed around individual student records as the primary unit of work. But admissions teams don't work record by record.</p>
         </Callout>
-        <ImagePlaceholder height={300} label="[Before / original interface showing the fragmentation problem · 900×550px]" />
+        <img src="/galaxy360/galaxy-before.png" alt="Original Galaxy 360 interface showing fragmentation" className="cs-full-img" />
       </CsSection>
 
       <CsSection id="s-insight" title="Research Insight">
@@ -82,7 +81,7 @@ export default function CaseStudyGalaxy360() {
 
         <h3>View 1: List View (restructured)</h3>
         <p>Purpose: structured data, filtering, bulk operations, reporting.</p>
-        <ImagePlaceholder height={300} label="[List View — applications with filters, sorting, document status indicators · 1100×650px]" />
+        <img src="/galaxy360/galaxy-list.png" alt="Galaxy 360 List View" className="cs-full-img" />
         <ul>
           <li>Advanced filtering by stage, university, document status, assigned member</li>
           <li>Sorting and full-text search</li>
@@ -92,7 +91,7 @@ export default function CaseStudyGalaxy360() {
 
         <h3>View 2: Kanban View (newly introduced)</h3>
         <p>Purpose: pipeline visualisation and workflow management. This was not in the original brief. I proposed it based on research.</p>
-        <ImagePlaceholder height={300} label="[Kanban View — application cards across pipeline stages · 1100×650px]" />
+        <img src="/galaxy360/galaxy-kanban.png" alt="Galaxy 360 Kanban View" className="cs-full-img" />
         <p style={{ fontSize: '.82rem', color: 'var(--ink-muted)', marginTop: -8 }}>Pipeline: Profile Created → Documents Pending → Application Submitted → Offer Received → Payment Pending → Visa Process → Completed</p>
         <ul>
           <li>Drag applications between stages</li>
@@ -106,7 +105,7 @@ export default function CaseStudyGalaxy360() {
         <div className="ia-layer"><div className="ia-layer__lbl">Layer 1: Applications Overview</div><div className="ia-layer__val">List View · Kanban View</div></div>
         <div className="ia-layer"><div className="ia-layer__lbl">Layer 2: Student Application Detail</div><div className="ia-layer__val">Profile · Documents · Communication · Offers · Tasks</div></div>
         <div className="ia-layer"><div className="ia-layer__lbl">Layer 3: Operational Actions</div><div className="ia-layer__val">Document verification · Offer updates · Payment tracking</div></div>
-        <ImagePlaceholder height={280} label="[Student Application Detail view — centralised student profile · 900×600px]" />
+        <img src="/galaxy360/galaxy-detail.png" alt="Galaxy 360 Student Application Detail view" className="cs-full-img" />
       </CsSection>
 
       <CsSection id="s-dev" title="Working with Developers">
