@@ -1,7 +1,6 @@
 import CaseStudyLayout from '../layouts/CaseStudyLayout';
 import CsSection from '../components/case-study/CsSection';
 import Callout from '../components/case-study/Callout';
-import ImagePlaceholder from '../components/case-study/ImagePlaceholder';
 import CsNav from '../components/case-study/CsNav';
 import SummaryStats from '../components/case-study/SummaryStats';
 import LearningCard from '../components/case-study/LearningCard';
@@ -38,7 +37,7 @@ export default function CaseStudyCVStitch() {
       meta={META}
       toc={TOC}
     >
-      <ImagePlaceholder height={360} label="[CVStitch landing page — hero section 'Tailor Your CV To A Specific Job' · 1200×675px]" />
+      <img src="/cvstitch/cvstitch-hero.png" alt="CVStitch landing page" className="cs-full-img" />
 
       <CsSection id="s-summary" title="Summary">
         <p>CVStitch provides fast, accessible, AI-assisted CV tailoring for early-career job seekers, without requiring them to understand prompt engineering or manually parse job descriptions.</p>
@@ -96,7 +95,7 @@ export default function CaseStudyCVStitch() {
       </CsSection>
 
       <CsSection id="s-workflow" title="Core Workflow">
-        <ImagePlaceholder height={300} label="[Upload + job description screen — two-panel interface · 1200×675px]" />
+        <img src="/cvstitch/cvstitch-upload.png" alt="CVStitch upload and job description screen" className="cs-full-img" />
         <div style={{ marginTop: 24 }}>
           {[
             { n: '1', title: 'Landing Page', desc: 'User arrives and immediately understands the value proposition.' },
@@ -117,7 +116,6 @@ export default function CaseStudyCVStitch() {
       </CsSection>
 
       <CsSection id="s-contributions" title="My Contributions">
-        <ImagePlaceholder height={280} label="[Generation in progress screen — three-step analysis progress indicator]" />
         <div style={{ marginTop: 28 }}>
           <div className="contribution">
             <div className="contribution__num">1</div>

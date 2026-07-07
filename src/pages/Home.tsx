@@ -64,7 +64,7 @@ export default function Home() {
 
             <Link to="/case-study/cvstitch" className="project-card card--sage">
               <div className="project-card__visual">
-                <div className="project-card__img">[CVStitch: landing page screenshot<br />Replace with &lt;img&gt; tag · 600×380px]</div>
+                <img src="/cvstitch.png" alt="CVStitch app screenshot" className="project-card__img project-card__img--photo" />
               </div>
               <div className="project-card__content">
                 <div className="project-card__tags">
@@ -84,7 +84,7 @@ export default function Home() {
 
             <Link to="/case-study/galaxy360" className="project-card card--amber">
               <div className="project-card__visual">
-                <div className="project-card__img">[Galaxy 360: Kanban board screenshot<br />Replace with &lt;img&gt; tag · 600×380px]</div>
+                <img src="/galaxy360.png" alt="Galaxy 360 app screenshot" className="project-card__img project-card__img--photo" />
               </div>
               <div className="project-card__content">
                 <div className="project-card__tags">
@@ -104,7 +104,7 @@ export default function Home() {
 
             <Link to="/case-study/orlando" className="project-card card--ice">
               <div className="project-card__visual">
-                <div className="project-card__img">[Orlando: dashboard screenshot<br />Replace with &lt;img&gt; tag · 600×380px]</div>
+                <img src="/orlando.png" alt="Orlando dashboard screenshot" className="project-card__img project-card__img--photo" />
               </div>
               <div className="project-card__content">
                 <div className="project-card__tags">
@@ -196,7 +196,7 @@ export default function Home() {
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" /><circle cx="4" cy="4" r="2" /></svg>
               LinkedIn
             </a>
-            <a href="mailto:shrissharma049@gmail.com" className="connect-link">
+            <a href="https://mail.google.com/mail/?view=cm&to=shrissharma049@gmail.com" target="_blank" rel="noopener noreferrer" className="connect-link">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m2 7 10 7 10-7" /></svg>
               Email
             </a>

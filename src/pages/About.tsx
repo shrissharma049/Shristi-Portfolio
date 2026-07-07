@@ -22,7 +22,7 @@ export default function About() {
               <Link to="/contact" className="btn-primary--sharp">Get in touch →</Link>
             </RevealWrapper>
             <RevealWrapper>
-              <div className="about-photo" role="img" aria-label="Profile photo placeholder">[Your photo<br />200×200px]</div>
+              <img src="/about-photo.jpeg" alt="Shristi Sharma" className="about-photo" style={{ objectFit: 'cover', objectPosition: 'center 15%' }} />
               <div className="quick-facts">
                 <div className="quick-fact"><p className="quick-fact__label">Location</p><p className="quick-fact__value">Watford, UK · Open to relocation</p></div>
                 <div className="quick-fact"><p className="quick-fact__label">Studying</p><p className="quick-fact__value">MSc IT Project Management · UWS</p></div>

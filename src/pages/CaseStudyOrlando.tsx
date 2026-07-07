@@ -1,7 +1,6 @@
 import CaseStudyLayout from '../layouts/CaseStudyLayout';
 import CsSection from '../components/case-study/CsSection';
 import Callout from '../components/case-study/Callout';
-import ImagePlaceholder from '../components/case-study/ImagePlaceholder';
 import CsNav from '../components/case-study/CsNav';
 import SummaryStats from '../components/case-study/SummaryStats';
 import LearningCard from '../components/case-study/LearningCard';
@@ -37,7 +36,7 @@ export default function CaseStudyOrlando() {
       meta={META}
       toc={TOC}
     >
-      <ImagePlaceholder height={360} label="[Orlando main dashboard — subscription overview or MRR analytics · 1200×675px]" />
+      <img src="/orlando/orlando-hero.png" alt="Orlando main dashboard" className="cs-full-img" />
 
       <CsSection id="s-summary" title="Summary">
         <p>Genese Solution, a SaaS reseller operating across multiple countries, managed software subscriptions (Zoom, AWS, KnowBe4, Zoho) across three departments maintaining separate Excel files. None of these files talked to each other.</p>
@@ -63,7 +62,6 @@ export default function CaseStudyOrlando() {
 
       <CsSection id="s-users" title="Understanding Users">
         <p>I conducted primary research across all three departments, not to understand what they wanted, but to understand how they worked and where the system was actively failing them.</p>
-        <ImagePlaceholder height={260} label="[User research artefacts — empathy maps or persona documents · 900×550px]" />
         <div className="persona-grid">
           {[
             { name: 'Isha Pokhrel', age: '24 · Product Associate', goal: 'Single platform to view all products, customers, and subscriptions.', pain: '"It takes 5+ minutes to find the right file."' },
@@ -80,10 +78,10 @@ export default function CaseStudyOrlando() {
             </div>
           ))}
         </div>
+        <img src="/orlando/orlando-research.png" alt="Orlando user research artefacts" className="cs-full-img" style={{ marginTop: 24 }} />
       </CsSection>
 
       <CsSection id="s-research" title="Competitor Research">
-        <ImagePlaceholder height={240} label="[Early wireframes — initial platform structure · 1000×600px]" />
         <ul>
           <li><strong>Chargebee:</strong> Strong analytics, but steep learning curve for non-technical users</li>
           <li><strong>Recurly:</strong> Good reporting, but complexity overwhelms mid-sized teams</li>
@@ -92,6 +90,7 @@ export default function CaseStudyOrlando() {
         <Callout teal>
           <p>All three were built for technical teams or large enterprises. Genese Solution needed a platform their Sales, Finance, and Product professionals could use without technical expertise. That gap defined Orlando's design direction.</p>
         </Callout>
+        <img src="/orlando/orlando-wireframes.png" alt="Orlando early wireframes" className="cs-full-img" style={{ marginTop: 20 }} />
       </CsSection>
 
       <CsSection id="s-decisions" title="Key Design Decisions">
@@ -109,13 +108,14 @@ export default function CaseStudyOrlando() {
 
       <CsSection id="s-solution" title="The Solution">
         <h3>Customer Management</h3>
-        <ImagePlaceholder height={280} label="[Customer management view — customer list or individual customer profile · 1100×650px]" />
+        <img src="/orlando/orlando-customers.png" alt="Orlando customer management view" className="cs-full-img" />
         <h3>Subscription Tracking</h3>
-        <ImagePlaceholder height={280} label="[Subscription tracking — active/expiring/lapsed subscriptions with status indicators · 1100×650px]" />
+        <img src="/orlando/orlando-subscriptions.png" alt="Orlando subscription tracking" className="cs-full-img" />
         <h3>Invoice Generation</h3>
         <p>Finance team members generate invoices directly from the subscription record, with product details and billing periods pre-populated. The manual cross-referencing step, along with the errors it caused, was eliminated.</p>
+        <img src="/orlando/orlando-invoice.png" alt="Orlando invoice generation" className="cs-full-img" />
         <h3>Revenue Analytics &amp; MRR</h3>
-        <ImagePlaceholder height={280} label="[Revenue analytics / MRR dashboard — revenue by product or customer · 1100×650px]" />
+        <img src="/orlando/orlando-revenue.png" alt="Orlando revenue analytics and MRR dashboard" className="cs-full-img" />
       </CsSection>
 
       <CsSection id="s-challenges" title="Challenges">
